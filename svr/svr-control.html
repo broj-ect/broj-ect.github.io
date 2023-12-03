@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#dialog").dialog({
+          autoOpen: false,
+          title: "",
+          width: 575,
+          buttons: {
+            Add: function () {
+              var src =
+                "tupa33-server.duckdns.org/api/v1/" +
+                $("#db").val() +
+                "/" +
+                $("#routes_").val();
+              if ($("#id_").val() == "") {
+                alert("You need to give id/link name!");
+              } else {
+                $.ajax({
+                  type: "POST",
+                  url: src,
+                  data: JSON.stringify({
+                    status: "",
+                    key: "",
+                    id: $("#id_").val(),
+                    align: $("#align_").val(),
+                  }),
+                  dataType: "json",
+                  contentType: "application/json",
+                  success: function (res) {
+                    $("#add-form").trigger("reset");
+                    $("#dialog").dialog("close");
+                    $("#fetch-data").click();
+                  },
+                });
+              }
+            },
+            Cancel: function () {
+              $("#add-form").trigger("reset");
+              $("#dialog").dialog("close");
+            },
+          },
+        });
+        $("#add-data").on("click", function () {
+          $("#dialog").dialog(
+            "option",
+            { title: "Add data to the server" },
+            "open"
+          );
+          $("#dialog").dialog("open");
+        });
+        $("#db").empty();
+        $("#db").append(new Option("No database selected", 0));
+        $("#db").append(new Option("link", "link", true, true));
+        $("#db_").append(new Option("No database selected", 0));
+        $("#db_").append(new Option("link", "link", true, true));
+        $("#routes").empty();
+        $("#routes").append(new Option("No route selected", 0));
+        $("#routes").append(new Option("navigation", "navigation", true, true));
+        $("#routes_").append(new Option("No route selected", 0));
+        $("#routes_").append(
+          new Option("navigation", "navigation", true, true)
+        );
+        $("#fetch-data").click(function () {
+          $("#data tbody").empty();
+          if ($("#routes").val() != 0) {
+            var src =
+              "tupa33-server.duckdns.org/api/v1/" +
+              $("#db").val() +
+              "/" +
+              $("#routes").val();
+            $.ajax({
+              type: "GET",
+              url: src,
+              headers: {
+                JSONkey: "",
+                JSONid: "",
+                JSONalign: "",
+              },
+              dataType: "json",
+              contentType: "application/json",
+              success: function (res) {
+                $.each(res, function (i, val) {
+                  $("#data tbody").append(
+                    "<tr><td>" +
+                      val.key +
+                      "</td><td>" +
+                      val.id +
+                      "</td><td>" +
+                      val.align +
+                      "</td><td><button id='upd_" +
+                      val.key +
+                      "'>Update</button></td></td><td><button id='del_" +
+                      val.key +
+                      "'>Delete</button></td></tr>"
+                  );
+                });
+                $("[id*='del_']").click(function () {
+                  var id = this.id.split("_")[1];
+                  $.ajax({
+                    type: "DELETE",
+                    url: src,
+                    data: JSON.stringify({
+                      status: "",
+                      key: id,
+                      id: "",
+                      align: "",
+                    }),
+                    dataType: "json",
+                    contentType: "application/json",
+                    success: function (res) {
+                      $("#fetch-data").click();
+                    },
+                  });
+                });
+                $("[id*='upd_']").click(function () {
+                  var id = this.id.split("_")[1];
+                  $.ajax({
+                    type: "GET",
+                    url: src,
+                    headers: {
+                      JSONkey: id,
+                      JSONid: "",
+                      JSONalign: "",
+                    },
+                    dataType: "json",
+                    contentType: "application/json",
+                    success: function (res) {
+                      $("#id_").val(res[0].id);
+                      $("#align_").val(res[0].align);
+                    },
+                  });
+                  $("#dialog")
+                    .dialog("option", {
+                      title: "Change link: ",
+                      buttons: {
+                        Save: function () {
+                          if ($("#id_").val() == "") {
+                            alert("ID / link name can not be empty!");
+                          } else {
+                            $.ajax({
+                              type: "PUT",
+                              url: src,
+                              data: JSON.stringify({
+                                status: "",
+                                key: id,
+                                id: $("#id_").val(),
+                                align: $("#align_").val(),
+                              }),
+                              dataType: "json",
+                              contentType: "application/json",
+                              success: function (res) {
+                                $("#add-form").trigger("reset");
+                                $("#dialog").dialog("close");
+                                $("#fetch-data").click();
+                              },
+                            });
+                          }
+                        },
+                        Cancel: function () {
+                          $("#add-form").trigger("reset");
+                          $(this).dialog("close");
+                        },
+                      },
+                    })
+                    .dialog("open");
+                });
+              },
+            });
+          } else {
+            $("#data tbody").append(
+              "<tr><td colspan='7'><h3>!ERROR!<br><br>Please select route before search</h3></td></tr>"
+            );
+          }
+        });
+      });
+    </script>
+    <style>
+      input::placeholder,
+      textarea::placeholder {
+        text-align: center;
+      }
+      input:focus::placeholder,
+      textarea:focus::placeholder {
+        color: transparent;
+      }
+      form {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+      }
+      input,
+      textarea {
+        text-align: center;
+        width: 100%;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      p,
+      option {
+        text-align: center;
+      }
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+        border-spacing: 0;
+        padding: 5px;
+      }
+      th,
+      td {
+        align-items: center;
+        text-align: center;
+        padding: 5px 10px;
+      }
+      td {
+        max-width: 200px;
+      }
+      main {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Site database control</h2>
+    <main>
+      <table id="data">
+        <thead>
+          <tr>
+            <th>key</th>
+            <th>id</th>
+            <th>align</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <thead>
+          <tr>
+            <th colspan="3" style="text-align: right">
+              <select id="db"></select>
+              <select id="routes"></select>
+              <button id="fetch-data">Fetch data from server</button>
+            </th>
+            <th colspan="4" style="text-align: right">
+              <button id="add-data">Add data to the server</button>
+            </th>
+          </tr>
+        </thead>
+      </table>
+      <div id="dialog">
+        <form id="add-form">
+          <label for="db_">Database</label>
+          <select id="db_"></select>
+          <hr />
+          <label for="routes_">Route/Collection of the database</label>
+          <select id="routes_"></select>
+          <hr />
+          <input
+            type="text"
+            id="id_"
+            placeholder="id same as link name"
+            tabindex="-1"
+          />
+          <hr />
+          <label for="align_">Align</label>
+          <select id="align_">
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+          </select>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

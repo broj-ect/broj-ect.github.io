@@ -1,0 +1,55 @@
+/* Navigation bar styles */
+
+/* Basic Navigation bar styles */
+nav {
+  min-height: 50px;
+  max-height: 50px;
+  font-weight: 900;
+  font-size: 15;
+}
+
+/* Navigation bar background */
+.bg-nav {
+  background: rgba(33, 33, 33, 1);
+}
+
+/* Navigation bar links */
+.nav-link {
+  padding: 11px;
+}
+
+.nav-pills a,
+.nav-link a {
+  --bs-nav-pills-link-active-bg: rgba(133, 133, 133, 1);
+  --bs-nav-link-hover-color: rgba(133, 133, 133, 1);
+  --bs-nav-link-color: rgba(133, 133, 133, 1);
+  color: rgba(133, 133, 133, 1);
+  padding: 13px 15px;
+  align-self: center;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+/* Navigation bar brand image and text */
+.navbar,
+.navbar-brand {
+  padding: 1px 0;
+  color: #fff;
+}
+
+nav .navbar-brand img {
+  height: 50px;
+  width: 50px;
+}
+
+/* Navigation bar active/current page */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  border-right: 5px double rgb(171, 150, 111);
+  border-left: 5px double rgb(171, 150, 111);
+  background-color: rgb(33, 33, 33);
+  border-radius: 100%;
+  color: #fff;
+}
