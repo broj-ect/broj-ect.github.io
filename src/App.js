@@ -12,7 +12,7 @@ export function App() {
 
   const [photos, setPhotos] = useState([]);
   useEffect(() => {
-    fetch("https://api.broject.cc/v1/locker",{})
+    fetch("https://api.broject.cc/v1/locker", {})
       .then((res) => {
         return res.json();
       })
@@ -23,7 +23,9 @@ export function App() {
   }, [time]);
 
   return (
-    <> <div className="wrapper" style={{ marginTop: 150 }}>
+    <>
+      <div style={{ padding: 15, fontSize:120, color:"white" }} className="empty">Front</div>
+      <div className="wrapper" style={{ marginTop:0 }}>
         {photos.map((photo, index) => {
           if (photo.Locker.Size === "screen")
             return (
@@ -59,7 +61,9 @@ export function App() {
                   color: "white",
                 }}
               >
-                <p>{photo.Char} {photo.Locker.Num}</p>
+                <p>
+                  {photo.Char} {photo.Locker.Num}
+                </p>
               </div>
             );
           }
@@ -77,16 +81,20 @@ export function App() {
               }}
               style={{
                 fontWeight: "bold",
+                background: "white",
                 border: "solid",
               }}
             >
-              <p>{photo.Char} {photo.Locker.Num}</p>
+              <p>
+                {photo.Char} {photo.Locker.Num}
+              </p>
             </div>
           );
         })}
       </div>
-      <div style={{padding:150}}></div>
-      <div className="wrapper flipped" style={{ marginTop: 150 }}>
+      <div style={{ padding: 75 }} className="empty"></div>
+      <div style={{ padding: 15, fontSize:120, color:"white" }} className="empty">Back</div>
+      <div className="wrapper flipped" style={{ marginTop:0 }}>
         {photos.map((photo, index) => {
           if (photo.Locker.Size === "screen")
             return (
@@ -122,7 +130,9 @@ export function App() {
                   color: "white",
                 }}
               >
-                <p>{photo.Char} {photo.Locker.Num}</p>
+                <p>
+                  {photo.Char} {photo.Locker.Num}
+                </p>
               </div>
             );
           }
@@ -140,10 +150,13 @@ export function App() {
               }}
               style={{
                 fontWeight: "bold",
+                background: "white",
                 border: "solid",
               }}
             >
-              <p>{photo.Char} {photo.Locker.Num}</p>
+              <p>
+                {photo.Char} {photo.Locker.Num}
+              </p>
             </div>
           );
         })}
