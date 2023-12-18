@@ -1,2 +1,0 @@
-.wrapper{display:grid;grid-auto-flow:column}div{cursor:pointer;text-align:center}.screen{background:#000;cursor:default}.screen,.xs{height:23px;width:66px}.s{grid-row:10/span 2;height:46px;width:66px}.m{height:23px}.l,.m{width:126px}.l{grid-row:1/span 2}.xl{grid-row:6/span 2}.xl,.xxl{width:126px}.xxl{grid-row:8/span 4}
-/*# sourceMappingURL=main.a93604b8.css.map*/
