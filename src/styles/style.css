@@ -1,10 +1,14 @@
-body {
-  background-image: url("https://freedesignfile.com/upload/2021/02/Blue-purple-gradient-background-vector.jpg");
+body,
+html {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://freedesignfile.com/upload/2021/02/Blue-purple-gradient-background-vector.jpg");
   background-repeat: no-repeat;
-  background-color: rgb(65, 65, 65);
   background-position: center;
   background-size: cover;
+  overflow: clip;
   min-width: 330px;
+  height: 100%;
+  margin: 0;
 }
 
 .wrapper {
@@ -35,7 +39,6 @@ div {
 p {
   font-size: 16px;
   font-weight: bold;
-  margin: 1.5px 0 0 0;
 }
 
 .screen {
