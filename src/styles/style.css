@@ -1,0 +1,47 @@
+.wrapper {
+    display: grid;
+    grid-auto-flow: column;
+  }
+  
+  div {
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .screen {
+    background: black;
+    cursor: default;
+    height: 23px;
+    width: 66px;
+  }
+  
+  .xs {
+    height: 23px;
+    width: 66px;
+  }
+  
+  .s {
+    height: 46px;
+    width: 66px;
+    grid-row: 10 / span 2
+  }
+  
+  .m {
+    height: 23px;
+    width: 126px;
+  }
+  
+  .l {
+    width: 126px;
+    grid-row: 1 / span 2
+  }
+  
+  .xl {
+    width: 126px;
+    grid-row: 6 / span 2
+  }
+  
+  .xxl {
+    width: 126px;
+    grid-row: 8 / span 4
+  }
