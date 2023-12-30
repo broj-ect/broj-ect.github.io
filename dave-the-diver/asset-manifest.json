@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/dave-the-diver/static/css/main.308850df.css",
-    "main.js": "/dave-the-diver/static/js/main.a5207e23.js",
+    "main.js": "/dave-the-diver/static/js/main.d26d4d67.js",
     "static/media/site-bg.webp": "/dave-the-diver/static/media/site-bg.bba10dca16f2de76474a.webp",
     "static/media/Achievements-dtd.png": "/dave-the-diver/static/media/Achievements-dtd.5660870c492b63e46668.png",
     "static/media/Characters-dtd.png": "/dave-the-diver/static/media/Characters-dtd.d632eb0619e23b59f17b.png",
     "index.html": "/dave-the-diver/index.html",
     "main.308850df.css.map": "/dave-the-diver/static/css/main.308850df.css.map",
-    "main.a5207e23.js.map": "/dave-the-diver/static/js/main.a5207e23.js.map"
+    "main.d26d4d67.js.map": "/dave-the-diver/static/js/main.d26d4d67.js.map"
   },
   "entrypoints": [
     "static/css/main.308850df.css",
-    "static/js/main.a5207e23.js"
+    "static/js/main.d26d4d67.js"
   ]
 }
