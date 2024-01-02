@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "/dave-the-diver/static/css/main.d96f6960.css",
-    "main.js": "/dave-the-diver/static/js/main.3ee19e44.js",
+    "main.css": "/dave-the-diver/static/css/main.b208a06b.css",
+    "main.js": "/dave-the-diver/static/js/main.1283a9ba.js",
+    "static/media/2-dtd.png": "/dave-the-diver/static/media/2-dtd.3eb0b9fe96509aef6db2.png",
     "static/media/header-dtd.png": "/dave-the-diver/static/media/header-dtd.5747c71e15f03491a2d4.png",
+    "static/media/1-dtd.png": "/dave-the-diver/static/media/1-dtd.cb8fdfef81e249493b5a.png",
+    "static/media/4-dtd.png": "/dave-the-diver/static/media/4-dtd.c201ade8a31e35b7536b.png",
+    "static/media/3-dtd.png": "/dave-the-diver/static/media/3-dtd.deae3ead02ef73b3b910.png",
     "static/media/brand.png": "/dave-the-diver/static/media/brand.c0b6dabc1ae74cd01400.png",
     "static/media/seapeople-city-dtd.png": "/dave-the-diver/static/media/seapeople-city-dtd.3c684863d654e8a3b623.png",
     "static/media/site-bg.webp": "/dave-the-diver/static/media/site-bg.bba10dca16f2de76474a.webp",
@@ -11,11 +15,11 @@
     "static/media/Characters-dtd.png": "/dave-the-diver/static/media/Characters-dtd.d632eb0619e23b59f17b.png",
     "static/media/Equipment-dtd.png": "/dave-the-diver/static/media/Equipment-dtd.4af62242100248864c8c.png",
     "index.html": "/dave-the-diver/index.html",
-    "main.d96f6960.css.map": "/dave-the-diver/static/css/main.d96f6960.css.map",
-    "main.3ee19e44.js.map": "/dave-the-diver/static/js/main.3ee19e44.js.map"
+    "main.b208a06b.css.map": "/dave-the-diver/static/css/main.b208a06b.css.map",
+    "main.1283a9ba.js.map": "/dave-the-diver/static/js/main.1283a9ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.d96f6960.css",
-    "static/js/main.3ee19e44.js"
+    "static/css/main.b208a06b.css",
+    "static/js/main.1283a9ba.js"
   ]
 }
