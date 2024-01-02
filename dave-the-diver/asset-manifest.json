@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dave-the-diver/static/css/main.b208a06b.css",
+    "main.css": "/dave-the-diver/static/css/main.c2aef323.css",
     "main.js": "/dave-the-diver/static/js/main.1283a9ba.js",
     "static/media/2-dtd.png": "/dave-the-diver/static/media/2-dtd.3eb0b9fe96509aef6db2.png",
     "static/media/header-dtd.png": "/dave-the-diver/static/media/header-dtd.5747c71e15f03491a2d4.png",
@@ -15,11 +15,11 @@
     "static/media/Characters-dtd.png": "/dave-the-diver/static/media/Characters-dtd.d632eb0619e23b59f17b.png",
     "static/media/Equipment-dtd.png": "/dave-the-diver/static/media/Equipment-dtd.4af62242100248864c8c.png",
     "index.html": "/dave-the-diver/index.html",
-    "main.b208a06b.css.map": "/dave-the-diver/static/css/main.b208a06b.css.map",
+    "main.c2aef323.css.map": "/dave-the-diver/static/css/main.c2aef323.css.map",
     "main.1283a9ba.js.map": "/dave-the-diver/static/js/main.1283a9ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.b208a06b.css",
+    "static/css/main.c2aef323.css",
     "static/js/main.1283a9ba.js"
   ]
 }
