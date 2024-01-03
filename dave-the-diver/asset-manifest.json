@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dave-the-diver/static/css/main.c2aef323.css",
-    "main.js": "/dave-the-diver/static/js/main.1283a9ba.js",
+    "main.css": "/dave-the-diver/static/css/main.7ec220c1.css",
+    "main.js": "/dave-the-diver/static/js/main.1eb5dfb5.js",
     "static/media/2-dtd.png": "/dave-the-diver/static/media/2-dtd.3eb0b9fe96509aef6db2.png",
     "static/media/header-dtd.png": "/dave-the-diver/static/media/header-dtd.5747c71e15f03491a2d4.png",
     "static/media/1-dtd.png": "/dave-the-diver/static/media/1-dtd.cb8fdfef81e249493b5a.png",
@@ -13,13 +13,17 @@
     "static/media/Achievements-dtd.png": "/dave-the-diver/static/media/Achievements-dtd.5660870c492b63e46668.png",
     "static/media/Weapons-dtd.png": "/dave-the-diver/static/media/Weapons-dtd.e0cb0fd37a7d085d59b5.png",
     "static/media/Characters-dtd.png": "/dave-the-diver/static/media/Characters-dtd.d632eb0619e23b59f17b.png",
+    "static/media/Sushi Staff-dtd.png": "/dave-the-diver/static/media/Sushi Staff-dtd.877e4867a0257486d347.png",
+    "static/media/Fish-dtd.png": "/dave-the-diver/static/media/Fish-dtd.9cbf5686d7662f48da64.png",
     "static/media/Equipment-dtd.png": "/dave-the-diver/static/media/Equipment-dtd.4af62242100248864c8c.png",
+    "static/media/Recipes-dtd.png": "/dave-the-diver/static/media/Recipes-dtd.f988fa0692567b31d41e.png",
+    "static/media/Missions-dtd.png": "/dave-the-diver/static/media/Missions-dtd.e2ad5ffc37a697fbebed.png",
     "index.html": "/dave-the-diver/index.html",
-    "main.c2aef323.css.map": "/dave-the-diver/static/css/main.c2aef323.css.map",
-    "main.1283a9ba.js.map": "/dave-the-diver/static/js/main.1283a9ba.js.map"
+    "main.7ec220c1.css.map": "/dave-the-diver/static/css/main.7ec220c1.css.map",
+    "main.1eb5dfb5.js.map": "/dave-the-diver/static/js/main.1eb5dfb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2aef323.css",
-    "static/js/main.1283a9ba.js"
+    "static/css/main.7ec220c1.css",
+    "static/js/main.1eb5dfb5.js"
   ]
 }
