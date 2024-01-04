@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.d3768d75.css","mappings":"AAAA,EAGE,0BAAmB,CAAnB,kBAAmB,CAFnB,uBAAwB,CAGxB,QAAS,CAFT,oBAGF","sources":["styles/style.css"],"sourcesContent":["p {\r\n  line-height: min-content;\r\n  white-space: pre-line;\r\n  height: min-content;\r\n  margin: 0;\r\n}"],"names":[],"sourceRoot":""}

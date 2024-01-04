@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.626538cc.css","mappings":"AAAA,EAEE,gBAAgB,CAChB,UAAW,CACX,QAAS,CAHT,oBAIF","sources":["styles/style.css"],"sourcesContent":["p {\r\n  white-space: pre-line;\r\n  text-wrap:nowrap;\r\n  height: 1em;\r\n  margin: 0;\r\n}"],"names":[],"sourceRoot":""}
