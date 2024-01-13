@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dave-the-diver/static/css/main.2a0a4a74.css",
-    "main.js": "/dave-the-diver/static/js/main.d5217d4b.js",
+    "main.css": "/dave-the-diver/static/css/main.1fc72b3b.css",
+    "main.js": "/dave-the-diver/static/js/main.a3ee8169.js",
     "static/media/Intro - FHD.webm": "/dave-the-diver/static/media/Intro - FHD.53b4fffbc35da1e61b21.webm",
     "static/media/header-dtd-night.webm": "/dave-the-diver/static/media/header-dtd-night.0bb93ee84a5e108ef6b2.webm",
     "static/media/header-dtd-restaurang.webm": "/dave-the-diver/static/media/header-dtd-restaurang.8a0fa35af6ca1e6773da.webm",
@@ -23,11 +23,11 @@
     "static/media/Recipes-dtd.png": "/dave-the-diver/static/media/Recipes-dtd.f988fa0692567b31d41e.png",
     "static/media/Missions-dtd.png": "/dave-the-diver/static/media/Missions-dtd.e2ad5ffc37a697fbebed.png",
     "index.html": "/dave-the-diver/index.html",
-    "main.2a0a4a74.css.map": "/dave-the-diver/static/css/main.2a0a4a74.css.map",
-    "main.d5217d4b.js.map": "/dave-the-diver/static/js/main.d5217d4b.js.map"
+    "main.1fc72b3b.css.map": "/dave-the-diver/static/css/main.1fc72b3b.css.map",
+    "main.a3ee8169.js.map": "/dave-the-diver/static/js/main.a3ee8169.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a0a4a74.css",
-    "static/js/main.d5217d4b.js"
+    "static/css/main.1fc72b3b.css",
+    "static/js/main.a3ee8169.js"
   ]
 }
