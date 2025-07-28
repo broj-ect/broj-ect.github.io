@@ -6,4 +6,4 @@
 
 ["/dave-the-diver/"](https://gh.devdorm.cc/dave-the-diver) - Dave the Diver fandom test
 
-["/elden-ring/"](https://gh.devdorm.cc/elden-ring) - Elden Ring (School Project | Laurea 2022)
+["/elden-ring/"](https://gh.devdorm.cc/elden-ring) - Elden Ring (School Project \| Laurea 2022)
