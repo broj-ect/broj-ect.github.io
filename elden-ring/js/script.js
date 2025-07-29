@@ -93,5 +93,5 @@ $("#footer_placeholder").load("assets/footer.html", function() {
   };
 
   // FSLightBox to the page
-  JS("/js/fs/fslightbox.js");
+  JS("js/fs/fslightbox.js");
 });
